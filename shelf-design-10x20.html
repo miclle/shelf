@@ -32,6 +32,7 @@
     svg .dimension-label { font-size:15px; font-weight:700; }
     .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
     table { border-collapse:collapse; width:100%; background:#fff; font-variant-numeric:tabular-nums; }
+    .hardware-table { min-width:680px; }
     th,td { border-bottom:1px solid #dce4e5; padding:9px 12px; text-align:left; vertical-align:top; }
     th { color:#465966; background:#eaf0f0; }
     .table-wrap { overflow:auto; border:1px solid #d9e1e2; border-radius:8px; }
@@ -175,12 +176,26 @@
           <tr><td>层板</td><td>不使用；盒底直接放在每盒两根平行托梁上</td></tr>
           <tr><td>万向轮</td><td>图示 40 mm 轮径、安装高 60，4 只；前方 2 只带刹车</td></tr>
           <tr><td>轮子转接板</td><td>约 70 × 70 × 3 mm 金属板，4 块；轮板 43 × 60 mm，M6 孔距约 30 × 45 mm</td></tr>
-          <tr><td>连接 / 防晃</td><td>适配所购 1020 单面 V 槽型材的角码或金属连接板；共 68 个梁端连接。背面和两侧外侧设置 X 形斜拉</td></tr>
+          <tr><td>连接 / 防晃</td><td>68 个梁端连接位置，配件和螺丝估算见下表；背面和两侧外侧设置 X 形斜拉</td></tr>
           <tr><td>防滑 / 挡边</td><td>托梁顶面贴防滑条；每层前后长梁各装 5 mm 高低挡边，共 10 条</td></tr>
         </tbody>
       </table></div>
     </section>
   </div>
+
+  <h2>连接件与紧固件估算</h2>
+  <div class="table-wrap"><table class="hardware-table">
+    <thead><tr><th>连接位置</th><th>连接件</th><th>数量</th><th>槽内 T 型螺母 + 螺丝</th></tr></thead>
+    <tbody>
+      <tr><td>20 根盒底托梁的两端</td><td>一字连接平片，每件 2 孔</td><td>40 件</td><td>80 套</td></tr>
+      <tr><td>10 根前 / 后长梁的两端</td><td>90° 角码，暂按每件 2 孔</td><td>20 件</td><td>40 套</td></tr>
+      <tr><td>2 根底部窄边梁 + 2 根顶部护栏的两端</td><td>L 型平片，暂按每件 2 孔</td><td>8 件</td><td>16 套</td></tr>
+      <tr><th>梁端合计</th><th>40 件一字片 + 20 件角码 + 8 件 L 片</th><th>68 处</th><th>136 套</th></tr>
+    </tbody>
+  </table></div>
+  <p class="caption">一字片装在梁底，沿盒底托梁的方向跨过与前 / 后长梁的 T 形接缝；一孔锁入长梁朝下的 V 槽，另一孔锁入托梁朝下的 V 槽。两梁底面均须齐平，片宽和孔距按实物槽位确定。相比每件 3 孔的 T 型平片，40 处接头共少用 40 套螺母和螺丝。两孔连接依赖接缝贴合和螺丝锁紧，先试装一处，检查托梁是否会转动或松动。</p>
+  <p class="caption">一套指 <strong>1 颗螺丝 + 1 颗与实际型材槽匹配的 T 型螺母</strong>。136 套仅适用于上表孔数、且所有孔均采用槽内螺母的方案；若改用四孔角码、端孔攻丝或穿孔固定，应按实物重算。窄边 L 片可能侵入盒子距立柱仅 3 mm 的侧隙，必须先试装；必要时改用外侧固定片或其他不占盒位的接头。</p>
+  <p class="caption">另计：4 只脚轮与转接板相连，按每只 4 孔准备 <strong>16 套 M6 螺栓及锁紧螺母</strong>，不计入上述 136 套。转接板若用每根立柱的两个纵向孔固定，还需 8 颗适配螺钉，但须先确认端孔能否攻丝及板孔位。背面和两侧共 3 组 X 形斜拉有 12 个端部固定点；若不能共用角码螺栓且能用型材槽固定，槽内螺母与螺丝各增 12 颗至 <strong>148 套</strong>，否则应选其他固定方式。</p>
 
   <h2>安装顺序与关键细节</h2>
   <ol>
@@ -198,7 +213,7 @@
   <h2>型材截面与连接确认</h2>
   <img class="profile-reference" src="assets/aluminum-profile-10x20.png" alt="所用 10 × 20 mm 单面 V 槽铝型材的截面与规格图">
   <p>图示型材为 10 × 20 mm、壁厚 1.8 mm 的单面 V 槽款，槽口约 6.2 mm，另有两条标注为 Ø4.2 mm 的纵向孔。前后长梁与盒底托梁均以 20 mm 宽面水平、10 mm 边竖向安装，V 槽朝下，让另一侧平整的 20 mm 宽面接触盒底。窄边护栏则以 20 mm 边竖向安装。按图示 0.34 kg/m 米重，13.37 m 型材约重 4.55 kg，未计连接件和轮子。</p>
-  <p class="caption">这款型材不是四面开槽的标准 2020。采购前请卖家确认适用的角码、槽内螺母以及端孔能否攻丝，并用实际连接件核对梁端长度、托梁顶面齐平和盒位净空；不要按 2020 连接件直接下单。</p>
+  <p class="caption">这款型材不是四面开槽的标准 2020。采购前请卖家按槽口、槽腔尺寸及连接片孔径确认 T 型螺母和螺丝规格；螺丝长度还取决于连接片厚度。用实际连接件核对端孔能否攻丝、梁端长度、托梁顶面齐平和盒位净空；不要按 2020 连接件直接下单。</p>
 </main>
 </body>
 </html>
