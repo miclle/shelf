@@ -33,6 +33,7 @@
     svg .dimension-label { font-size:15px; font-weight:700; }
     .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
     table { border-collapse:collapse; width:100%; background:#fff; font-variant-numeric:tabular-nums; }
+    .hardware-table { min-width:680px; }
     th,td { border-bottom:1px solid #dce4e5; padding:9px 12px; text-align:left; vertical-align:top; }
     th { color:#465966; background:#eaf0f0; }
     .table-wrap { overflow:auto; border:1px solid #d9e1e2; border-radius:8px; }
@@ -48,6 +49,7 @@
 <main>
   <h1>双盒五层无层板小货架</h1>
   <p class="lead">15 × 15 mm 铝型材直接托住平底盒 · 每层两个 312 × 225 × 75 mm 盒子 · 所有标注单位为 mm</p>
+  <p><a href="shelf-design-10x20.html">查看 10 × 20 mm 版本</a></p>
 
   <section class="metrics" aria-label="关键尺寸">
     <div class="metric"><strong>665 × 245</strong><small>型材外框长 × 宽</small></div>
@@ -60,7 +62,7 @@
   <div class="fig">
     <svg viewBox="0 0 900 740" role="img" aria-labelledby="front-title front-desc">
       <title id="front-title">五层小货架正视尺寸图</title>
-      <desc id="front-desc">665 毫米长的无层板框架有四根角立柱，立柱顶端与最上层盒沿齐平；五层托梁顶面分别离地 78、198、318、438 和 558 毫米，装盒总高 633 毫米。</desc>
+      <desc id="front-desc">665 毫米长的无层板框架有四根角立柱，立柱顶端与最上层盒沿齐平；从下往上第一至第五层托梁顶面分别离地 78、198、318、438 和 558 毫米，相邻托梁顶面层距均为 120 毫米，装盒总高 633 毫米。</desc>
       <defs><marker id="dim-arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M6 0 L0 3 L6 6" fill="none" stroke="#566977" stroke-width="1"/></marker></defs>
       <line x1="50" y1="700" x2="830" y2="700" stroke="#55656d" stroke-width="2"/>
       <text x="832" y="705" class="note">地面</text>
@@ -87,15 +89,33 @@
       <path d="M123 640v15 M718 640v15" stroke="#59636a" stroke-width="8"/>
       <circle class="wheel" cx="123" cy="675" r="20"/><circle class="wheel" cx="718" cy="675" r="20"/>
       <text x="264" y="89" text-anchor="middle" class="lab">312 × 225 × 75</text>
-      <text x="581" y="89" text-anchor="middle" class="lab">312 × 225 × 75</text>
+      <text x="581" y="109" text-anchor="middle" class="lab">第 5 层 · 托面离地 558</text>
+      <text x="581" y="229" text-anchor="middle" class="lab">第 4 层 · 托面离地 438</text>
+      <text x="581" y="349" text-anchor="middle" class="lab">第 3 层 · 托面离地 318</text>
+      <text x="581" y="469" text-anchor="middle" class="lab">第 2 层 · 托面离地 198</text>
+      <text x="581" y="589" text-anchor="middle" class="lab">第 1 层 · 托面离地 78</text>
       <text x="422.5" y="33" text-anchor="middle" class="note">上层两条窄边护栏与盒沿齐平</text>
-      <line class="extension" x1="755" y1="67" x2="810" y2="67"/><line class="extension" x1="755" y1="700" x2="810" y2="700"/>
-      <line class="dim" x1="800" y1="67" x2="800" y2="700"/>
-      <text x="783" y="380" transform="rotate(-90 783 380)" text-anchor="middle" class="dimension-label">总高 633</text>
+      <text x="790" y="122" text-anchor="middle" class="note">层距</text>
+      <line class="extension" x1="755" y1="142" x2="800" y2="142"/>
+      <line class="extension" x1="755" y1="262" x2="800" y2="262"/>
+      <line class="extension" x1="755" y1="382" x2="800" y2="382"/>
+      <line class="extension" x1="755" y1="502" x2="800" y2="502"/>
+      <line class="extension" x1="755" y1="622" x2="800" y2="622"/>
+      <line class="dim" x1="790" y1="142" x2="790" y2="262"/>
+      <line class="dim" x1="790" y1="262" x2="790" y2="382"/>
+      <line class="dim" x1="790" y1="382" x2="790" y2="502"/>
+      <line class="dim" x1="790" y1="502" x2="790" y2="622"/>
+      <text x="809" y="207" class="dimension-label">120</text>
+      <text x="809" y="327" class="dimension-label">120</text>
+      <text x="809" y="447" class="dimension-label">120</text>
+      <text x="809" y="567" class="dimension-label">120</text>
+      <line class="extension" x1="755" y1="67" x2="880" y2="67"/><line class="extension" x1="755" y1="700" x2="880" y2="700"/>
+      <line class="dim" x1="870" y1="67" x2="870" y2="700"/>
+      <text x="852" y="380" transform="rotate(-90 852 380)" text-anchor="middle" class="dimension-label">总高 633</text>
       <line class="dim" x1="90" y1="723" x2="755" y2="723"/><text x="422.5" y="716" text-anchor="middle" class="dimension-label">665</text>
       <line class="dim" x1="51" y1="640" x2="51" y2="700"/><text x="51" y="628" text-anchor="middle" class="dimension-label">轮高 60</text>
     </svg>
-    <p class="caption">托梁顶面离地 78 / 198 / 318 / 438 / 558；相邻顶面间距 120。无层板后，盒顶至上一层前梁底的净空为 <strong>120 − 75 − 15 = 30</strong>。正面低挡边高 5，取盒时轻抬越过挡边。</p>
+    <p class="caption">图中四段 120 mm 是相邻两层托梁<strong>顶面到顶面</strong>的层距。第一至第五层托面离地依次为 78 / 198 / 318 / 438 / 558 mm；两层之间的盒位净高为 120 − 15 = 105 mm，放入高 75 mm 的盒子后，盒顶至上一层前梁底净空为 <strong>30 mm</strong>。正面低挡边高 5 mm，取盒时轻抬越过挡边。</p>
   </div>
 
   <h2>俯视图 · 每层盒位</h2>
@@ -146,7 +166,7 @@
           <tr><th>15 × 15 型材合计</th><th>13,790 mm</th><th>38 根切件</th></tr>
         </tbody>
       </table></div>
-      <p class="caption">尺寸以横梁<strong>顶在立柱之间</strong>、无额外连接块为前提。按 2 m 原材及每刀约 3 mm 锯缝，8 根可排下：3 根各切 3 × 635；第 4 根切 635 + 2 × 570；第 5 根切 2 × 570 + 3 × 215；第 6、7 根各切 8 × 215；第 8 根切 5 × 215。连接件若占长度，先修正下料值。</p>
+      <p class="caption">尺寸以横梁<strong>顶在立柱之间</strong>、无额外连接块为前提。按 2 m 原材及每刀约 3 mm 锯缝，8 根可排下：3 根各切 3 × 635；第 4 根切 635 + 2 × 570；第 5 根切 2 × 570 + 3 × 215；第 6、7 根各切 8 × 215；第 8 根切 5 × 215。共需 24 根 215 mm 切件，其中 20 根托梁、4 根窄边梁。连接件若占长度，先修正下料值。</p>
     </section>
     <section>
       <h2>其余材料</h2>
@@ -156,18 +176,36 @@
           <tr><td>层板</td><td>不使用；盒底直接放在每盒两根平行托梁上</td></tr>
           <tr><td>万向轮</td><td>图示 40 mm 轮径、安装高 60，4 只；前方 2 只带刹车</td></tr>
           <tr><td>轮子转接板</td><td>约 70 × 70 × 3 mm 金属板，4 块；轮板 43 × 60 mm，M6 孔距约 30 × 45 mm</td></tr>
-          <tr><td>连接 / 防晃</td><td>兼容所购 15 系列型材的连接件，68 个梁端连接；背面和两侧外侧设置 X 形斜拉</td></tr>
+          <tr><td>连接 / 防晃</td><td>68 个梁端连接位置，角码套装数量见下表；背面和两侧外侧设置 X 形斜拉</td></tr>
           <tr><td>防滑 / 挡边</td><td>托梁顶面贴防滑条；每层前后长梁各装 5 mm 高低挡边，共 10 条</td></tr>
         </tbody>
       </table></div>
     </section>
   </div>
 
+  <h2>连接件与紧固件估算</h2>
+  <div class="table-wrap"><table class="hardware-table">
+    <thead><tr><th>连接位置</th><th>连接件</th><th>数量</th></tr></thead>
+    <tbody>
+      <tr><td>20 根盒底托梁，每根前后两端各 1 件</td><td>含配套紧固件的两孔 90° 角码套装</td><td>每根 2 套，共 40 套</td></tr>
+      <tr><td>10 根前 / 后长梁的两端</td><td>同款角码套装</td><td>20 套</td></tr>
+      <tr><td>2 根底部窄边梁 + 2 根顶部护栏的两端</td><td>同款角码套装</td><td>8 套</td></tr>
+      <tr><th>梁端合计</th><th>角码及其随附件</th><th>68 套 / 68 处</th></tr>
+    </tbody>
+  </table></div>
+  <p class="caption">按四面有槽的 15 × 15 mm 型材、每处接头用 1 套两孔角码估算：托梁的前、后端各在一侧装 1 套，合计每根 2 套；角码分别锁在前 / 后长梁的侧面槽与托梁的侧面槽，上沿不得高于托面。立柱处的角码优先放在横梁下方，不能侵入盒位或扩大外框。<strong>本清单以角码自带完成两孔固定所需的螺丝和适配槽用螺母为前提，梁端无需另购螺母和螺丝。</strong>先用实物试装托梁和顶部护栏接头，核对随附件、孔距、托面齐平及盒子两侧仅 3 mm 的净隙。</p>
+  <p class="caption">若托梁改为<strong>每端左右两侧各 1 套</strong>，则每根需 4 套，20 根托梁共 80 套；连同其他梁端，角码总数变为 <strong>108 套</strong>。这是加固备选数量，不包含在上表的 68 套内。</p>
+  <p class="caption">另计：4 只脚轮与转接板相连，按每只 4 孔准备 <strong>16 套适配轮板的螺栓及锁紧螺母</strong>。转接板到立柱必须采用能防转的多点固定结构；仅锁一颗立柱中心端孔螺钉不能防止轮板转动，其紧固件数量应按选定结构另计。背面和两侧共 3 组 X 形斜拉有 12 个端部固定点；若不能共用角码的紧固件，需按斜拉连接方式另配 12 处固定件。轮板、转接板和斜拉紧固件不包含在上述角码套装内。</p>
+
+  <h2>扩展方式与采购确认</h2>
+  <p>这版建议选<strong>四面有槽、配件同系列的 15 × 15 mm 型材</strong>：长梁底面槽便于沿长边调整托梁位置，侧面槽可在不挡住盒位的区域加装标签、侧挡及斜拉连接件。示例可参考 <a href="https://es.misumi-ec.com/pdf/fa/2014/P2_0741-0742_F40_EN.pdf">MISUMI 的 15 mm 方型材及配套连接件目录</a>；它只用于说明一种配套体系，不代表角码随附件清单或本图连接强度。采购时核对 <strong>15 × 15 mm</strong> 实际截面、槽口 / 槽腔尺寸、角码随附的螺母形状与螺丝长度，勿只按“1515”名称下单。</p>
+  <p class="caption">现有五层装盒总高 633 mm，距 650 mm 上限仅 17 mm；增加层数或抬高顶部会超出本方案约束。扩展配件不得占用盒子左右仅 3 mm 的净隙，也不能挡住取盒侧的 30 mm 竖向净空。更换盒子尺寸、增加载重或改动轮板与斜拉时，重新核对外框、层距、型材下料和连接强度。</p>
+
   <h2>安装顺序与关键细节</h2>
   <ol>
-    <li>先用底层横梁连接四根角立柱，复核 665 × 245 外框及对角线；四角底部装金属转接板，再把四个轮子固定在转接板下。<strong>43 × 60 的轮板不能直接锁在 15 mm 宽的型材端面。</strong></li>
+    <li>先用底层横梁连接四根角立柱，复核 665 × 245 外框及对角线；四角底部装防转的金属转接板，再把四个轮子固定在转接板下。<strong>43 × 60 的轮板不能直接锁在 15 mm 宽的型材端面。</strong></li>
     <li>自下而上安装五层前后长梁。梁底离地依次为 63、183、303、423、543；每层四根 215 mm 托梁跨接前后长梁，所有托梁顶面与长梁顶面齐平。</li>
-    <li>每个盒子下方放两根托梁，中心距暂定 120 mm，用实物确认盒底接触后锁紧连接件。前后长梁各装 5 mm 高低挡边；最上层只在左右窄边装护栏，其上沿与盒沿同为离地 633。</li>
+    <li>每个盒子下方放两根托梁，中心距暂定 120 mm，用实物确认盒底与托梁贴合后锁紧连接件；若顶面槽使盒底只接触窄边，可加平整防滑垫条。前后长梁各装 5 mm 高低挡边；最上层只在左右窄边装护栏，其上沿与盒沿同为离地 633。</li>
     <li>安装背面与左右两侧的 X 形斜拉，收紧后再复核架体垂直。</li>
     <li>用带刹车的两只轮子放在取盒侧；重物优先放低层，取放或停放时锁住刹车。</li>
   </ol>
